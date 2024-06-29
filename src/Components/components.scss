@@ -1,0 +1,33 @@
+@import "./variable.scss";
+
+header {
+  height: 4rem;
+  width: 100%;
+  background-color: $header;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  h1 {
+    color: white;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      li {
+        list-style: none;
+        font-weight: bold;
+        margin: 10px;
+
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  }
+}

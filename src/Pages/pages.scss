@@ -1,0 +1,67 @@
+.carrier_div {
+  height: 100vh;
+  background-color: #202124;
+  width: 100%;
+  position: absolute;
+  .min-carrier {
+    position: relative;
+    top: 5rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    .intro {
+      margin: 3rem 0 4rem 0;
+      h3 {
+        font-size: 5rem;
+        color: white;
+        text-align: center;
+        font-weight: semibold;
+      }
+    }
+    .carrier_inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .input-image {
+        border: 0.9px solid white;
+        border-radius: 40px;
+        width: 550px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        overflow: hidden;
+        padding: 20px;
+        &:hover {
+          cursor: text;
+          border: none;
+          background-color: #2e3139;
+        }
+        input {
+          background-color: transparent;
+          border: none;
+          width: 400px;
+          color: white;
+          &:focus {
+            outline: none;
+            color: white;
+          }
+        }
+        .search {
+          margin-right: 32px;
+        }
+        .search,
+        .mic,
+        .lens {
+          color: white;
+        }
+        .mic {
+          cursor: pointer;
+          gap: 5px;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
